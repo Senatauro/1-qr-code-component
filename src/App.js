@@ -2,7 +2,6 @@ import QRGenerator from "./component/QRGenerator";
 // Get the route path from the url
 import { useParams } from "react-router-dom";
 
-import qr from "./images/image-qr-code.png";
 import "./App.css";
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <a target="_blank" href={qrParam ? qrParam : "https://www.frontendmentor.io"}>
+        <a target="_blank" rel="noreferrer" href={qrParam ? qrParam : "https://www.frontendmentor.io"}>
         <div className="qr-code-holder">
           <QRGenerator value={qrParam ? qrParam : "https://www.frontendmentor.io"} />
           </div>
