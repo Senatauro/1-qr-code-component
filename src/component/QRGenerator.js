@@ -5,7 +5,7 @@ export default function QRGenerator(props) {
     <div>
       <QRCode
               value={props.value}
-              size="160"
+              size={160}
               bgColor="#2B7DFA"
               fgColor="#FFFFFF"
           />
